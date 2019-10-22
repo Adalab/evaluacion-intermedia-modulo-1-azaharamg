@@ -14,7 +14,6 @@ body {
   align-items: center;
   background: white;
   width: 100%;
-
 }
 .header__logo{
   width: 155px;
@@ -38,6 +37,7 @@ body {
 .main{
   background: #3CDBC0;
   height: 100vh;
+  width: 100%;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -53,12 +53,23 @@ body {
 
 /*Responsive*/
 @media all and (min-width:768px){
+  .header{
+  display:flex;
+  flex-direction: row;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  width: 100%;
+  
+  }
   .header__logo{
     padding: 30px;
   }
   .nav__items{
     justify-content: flex-end;
     list-style-type: none;
+    padding: 10px;;
   }
   .main__content{
     font-size: 40px;
